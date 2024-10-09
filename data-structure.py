@@ -104,6 +104,24 @@ def normalSet():
     newset = [mydataSet for mydataSet in mySet if "apple" != mydataSet]
     print(newset)
     
+#normal dictionary
+def normalDictionary():
+    thisdict = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+    }
+    thisdict['colors'] = "blue"
+    dictKey = thisdict.keys()
+    dictValue = thisdict.values()
+    dict = thisdict.items()
+    thisdict.update({"year": 2020})
+    print(dictKey)
+    print(dictValue)
+    print(dict)
+    
+#nested dictionary
+def nestedDictionary():
     myfamily = {
     "child1" : {
         "name" : "Emil",
@@ -133,5 +151,6 @@ def normalSet():
 # nestedfullOptimizedLoop()
 # normalTuple()
 # updateTuple()
-normalSet()
-
+# normalSet()
+# normalDictionary()
+nestedDictionary()
